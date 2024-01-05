@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #details {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+
+        h2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+            border-radius: 10px 10px 0 0; /* Adjusted border-radius */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        #language-selection,
+        #place {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="details">
+            <h2>Create A New Account</h2>
+            <label for="farmerUsername"><h3>Username:</h3></label>
+            <input type="text" id="farmerUsername">
+            <label for="farmeremail"><h3>Email Address:</h3></label>
+            <input type="text" id="farmeremail">
+            <label for="farmerphone"><h3>Phone No:</h3></label>
+            <input type="text" id="farmerphone">
+            <label for="farmerPassword"><h3>Password:</h3></label>
+            <input type="password" id="farmerPassword">
+            <label for="farmerConfirmPassword"><h3>Confirm Password:</h3></label>
+            <input type="password" id="farmerConfirmPassword">
+
+            <section id="language-selection">
+                <h3>Select Language:</h3>
+                <select id="language-dropdown" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="es">Assamese</option>
+                    <option value="fr">Bangla</option>
+                     <option value="fr">Bodo</option>
+          <option value="fr">Dogri</option>
+          <option value="fr">Gujrati</option>
+          <option value="fr">Hindi</option>
+          <option value="fr">Kashmiri</option>
+          <option value="fr">Kannada</option> 
+          <option value="fr">Konkani</option>
+          <option value="fr">Maithili</option>
+          <option value="fr">Malyalam</option>
+          <option value="fr">Manipuri</option>
+          <option value="fr">Marathi</option>
+          <option value="fr">Nepali</option>
+          <option value="fr">Oriya</option>
+          <option value="fr">Punjabi</option>
+          <option value="fr">Tamil</option>
+          <option value="fr">Telugu</option>
+          <option value="fr">Santhali</option>
+          <option value="fr">Sindhi</option>
+          <option value="fr">Urdu</option>
+
+                </select>
+            </section>
+
+            <div id="place">
+                <label for="State"><h3>State:</h3></label>
+                <input type="text" id="State">
+                <label for="District"><h3>District:</h3></label>
+                <input type="text" id="District">
+            </div>
+
+            <a href="homepage.html" class="button">Register</a>
+        </div>
+    </section>
+</body>
+
+</html>

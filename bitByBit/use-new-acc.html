@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Create Your Account</title> 
+    <style> 
+      body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        background-color: #f5f5f5; 
+        margin: 0; 
+        padding: 0; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh; 
+      } 
+      
+      #registration-box { 
+        background-color: #ffffff; 
+        border-radius: 10px; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+        padding: 30px; 
+        width: 400px; 
+        text-align: center; 
+      } 
+      
+      h2 { 
+        background-color: #F9FAF0; 
+        color: #333; 
+        padding: 15px; 
+        margin: 0; 
+        border-radius: 10px 10px 0 0; 
+        margin-bottom: 20px; 
+        font-size: 24px; 
+      } 
+      
+      label { 
+        display: block; 
+        margin-bottom: 15px; 
+        color: #555; 
+        font-size: 16px; 
+      } 
+      
+      input { 
+        width: calc(100% - 30px); 
+        padding: 10px; 
+        margin-bottom: 20px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        box-sizing: border-box; 
+        font-size: 16px; 
+      } 
+      
+      .register-button { 
+        display: inline-block; 
+        padding: 12px 25px; 
+        background-color: #4CAF50; 
+        color: white; 
+        text-decoration: none; 
+        font-size: 18px; 
+        border-radius: 5px; 
+        transition: background-color 0.3s; 
+        cursor: pointer; 
+      } 
+      
+      .register-button:hover { 
+        background-color: #45a049; 
+      } 
+    </style> 
+  </head> 
+  <body> 
+    <section> 
+      <div id="registration-box"> 
+        <h2>Create A New Account</h2> 
+        <label for="Username"><h3>Username:</h3></label> 
+        <input type="text" id="Username"> 
+        <label for="Useremail"><h3>Email Address:</h3></label> 
+        <input type="text" id="Useremail"> 
+        <label for="Userphone"><h3>Phone No:</h3></label> 
+        <input type="text" id="Userphone"> 
+        <label for="Userpassword"><h3>Password:</h3></label> 
+        <input type="password" id="Userpassword"> 
+        <label for="UserPassword"><h3> Confirm Password:</h3></label> 
+        <input type="password" id="UserPassword"><br><br>  
+        <a href="homepage.html" class="register-button">Register</a> 
+      </div> 
+    </section> 
+  </body> 
+</html>
