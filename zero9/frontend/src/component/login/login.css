@@ -1,0 +1,76 @@
+.container{
+    color: white;
+    background-color: yellowgreen;
+    height: 380px;
+    width: 22%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    top: 150px;
+    position: relative;
+    padding: 25px;
+
+}
+
+
+.container h1{
+font-size: 45px;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding-bottom: 30px;
+}
+.container .inputbox{
+    width: 80%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding:12px;
+    padding-bottom: 5px; 
+    text-align: left;
+    align-items: center;
+    margin: 12px auto;
+    margin-bottom: 5px;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+   left: 40px;
+   
+   
+}
+
+.container .appbutton{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    width: 65%;
+    color: white;
+    background-color: orangered;
+    padding: 0px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.container span{
+    font-size: 14px;
+    color:orangered;
+    
+}
+.container .registrationbutton {
+    font-size: 18px;
+    text-align: right;
+    margin: auto;
+    align-items: right;
+    float: right;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
