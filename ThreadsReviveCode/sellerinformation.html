@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Information</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Seller Cloth Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Seller Information</h2>
+        <form>
+          <div class="form-group">
+            <label for="sellerName">Seller Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="sellerName"
+              name="sellerName"
+              placeholder="Enter Seller Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="sellerEmail">Seller Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="sellerEmail"
+              name="sellerEmail"
+              placeholder="Enter Seller Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="selleraddress">Full address</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="selleraddress"
+              name="selleraddress"
+              placeholder="Enter seller Full address "
+            />
+          </div>
+          <div class="form-group">
+            <lable for="sellerphone">Phone number</lable>
+            <input
+              type="tel"
+              class="form-control"
+              id="sellerphone"
+              name="sellerphone"
+              placeholder="Enter seller Phone number"
+            />
+          </div>
+          <a href="seller.html" class="btn btn-primary">Submit</a>
+        </form>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

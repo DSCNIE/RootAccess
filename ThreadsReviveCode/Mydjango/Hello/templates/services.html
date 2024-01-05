@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #bee3b6;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 30px 30px;
+        font-size: 25px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #883689;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p style="font-size: 200%">Are you a buyer or seller?</p>
+      <div class="buttons">
+        <button onclick="window.location.href='buyer.html'">Buyer</button>
+        <button onclick="window.location.href='trail.html'">Seller</button>
+      </div>
+    </div>
+  </body>
+</html>

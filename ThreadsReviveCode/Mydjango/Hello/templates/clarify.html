@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Information</title>
+</head>
+<body>
+
+<h2>Get Product Information</h2>
+
+<form id="productForm" enctype="multipart/form-data">
+    Product Name: <input type="text" id="productName" required><br>
+    Product Price: <input type="number" id="productPrice" required><br>
+    Product Image: <input type="file" id="productImage" accept="image/*" required><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Product Information</h2>
+
+<div id="productInfo">
+    <p id="productNameInfo"></p>
+    <p id="productPriceInfo"></p>
+    <img id="productImageInfo" src="">
+</div>
+
+<script>
+document.getElementById('productForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var formData = new FormData(event.target);
+
+    fetch('http://127.0.0.1:8000/classify_image/', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        // Store the output in a variable
+        var output = data;
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+});
+</script>
+
+</body>
+</html>

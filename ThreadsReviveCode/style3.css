@@ -1,0 +1,39 @@
+/* Container holding the buttons */
+.container {
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+/* Add a hover effect for the buttons */
+.btn:hover {
+    background-color: #666; /* Dark-grey */
+    color: white;
+}
+
+/* Style the active button */
+.btn.active {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+/* Add padding and a border for the buttons */
+.btn {
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Button positions */
+.btn-buyer {
+    left: 0;
+}
+
+.btn-seller {
+    right: 0;
+}
