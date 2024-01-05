@@ -1,4 +1,6 @@
 # RootAccess
+<img width="591" alt="Screenshot 2023-12-23 at 9 26 02 PM" src="https://github.com/DSCNIE/RootAccess/assets/71164090/9be766b9-5b8b-4e1d-9afa-5d1c79c9958f">
+
 
 Welcome to RootAccess, where the pulse of innovation reverberates through the digital corridors of creativity, and every line of code is a step into the extraordinary. RootAccess Hackathon, hosted by Google Developer Student Club at The National Institute of Engineering (NIE), Mysore, is not just an event—it's a digital carnival, a vibrant convergence of tech enthusiasts, coding maestros, and aspiring innovators.
 
