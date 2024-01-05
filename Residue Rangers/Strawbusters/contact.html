@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #contact{
+            font-size: 40px;
+            color: aliceblue;
+        }
+        #span{
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div id="headname">StrawBusters</div>
+        <div class = navigate>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="About us.html"><b>About Us</b></a></li>
+                    <li><a href=""><b>Contact</b></a></li>
+                    <li><button id="login" onclick="location.href= 'login.html'"><b>Login</b></button></li>
+                    <li><button id="register" onclick="location.href='register.html'"><b>Register</b></button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <br><br><br>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="About us.html"><b>About Us</b></a></li>
+                <li><a href=""><b>Contact</b></a></li>
+                <li><button id="login" onclick="location.href= 'login.html'"><b>Login</b></button></li>
+                <li><button id="register" onclick="location.href='register.html'"><b>Register</b></button></li>
+            </ul>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+          <div id="contact">Contact Us: <span id="span">+915464646464</span></div>
+    </header>
+
+
+    <footer class="footer">
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="About us.html"><b>About Us</b></a></li>
+            <li><a href=""><b>Contact</b></a></li>
+        </ul>
+        <ul>
+            <li><a href=""><b>Learn More</b></a></li>
+            <li><a onclick="location.href= 'login.html'"><b>Contact Us</b></a></li>
+            <li><a onclick="location.href='register.html'"><b>Help</b></a></li>
+        </ul>
+        <ul>
+            <li><a onclick="location.href= 'login.html'"><b>Login</b></a></li>
+            <li><a onclick="location.href='register.html'"><b>Register</b></a></li>
+            <li><a onclick="location.href='register.html'"><b>Welcome</b></a></li>
+        </ul>
+        
+
+        <p class="links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-facebook" style="font-size:36px; color: rgb(53, 53, 203);"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-instagram" style="font-size:36px; color: rgb(240, 9, 170);"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-twitter" style="font-size:36px; color: rgb(20, 216, 255);"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-linkedin" style="font-size:36px; color: rgb(0, 78, 167);"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-youtube" style="font-size:36px; color: rgb(255, 0, 0);"></i></a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+<script>
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+
+</script>
+</html>
