@@ -1,0 +1,298 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(152, 243, 243);
+}
+
+.header{
+    height: 820px;
+    background-image: url(ramkumar-radhakrishnan-wikimedia-1622193304-1622193304.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+#headname{
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    left: 60px;
+    line-height: 100px;
+    color: aliceblue;
+}
+
+.navbar {
+    display: flex;
+    float: right;
+    /* box-shadow: 0 5px 20px rgba(29, 29, 29, 0.4); */
+    /* background-color: rgb(28, 28, 28); */
+
+}
+
+.navbar ul{
+    padding: 0px;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar li a:hover{
+    color: rgb(74, 74, 74);
+    border-bottom: 3px solid rgb(204, 204, 204);
+    font-size: larger;
+    transition:1s;
+}
+
+nav ul li:after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+  }
+  nav ul li:hover::after{
+    width:100%;
+  }
+
+  .navbar li #login,#register{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  .navbar #login{
+    color: white;
+    border: 2px solid red;
+    background-color: red;
+  }
+
+  .navbar #login:hover{
+    color: white;
+    border: 2px solid rgb(151, 46, 46);
+    background-color: rgb(151, 46, 46);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar #register{
+    color: white;
+    border: 2px solid blue;
+    background-color: blue;
+  }
+
+  .navbar #register:hover{
+    color: white;
+    border: 2px solid rgb(39, 39, 107);
+    background-color: rgb(40, 40, 101);
+    transition: all 0.5s ease-in-out;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: rgb(28, 28, 28);
+
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+.mobile-menu ul{
+    padding: 0px;
+}
+
+.mobile-menu li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mobile-menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.mobile-menu li a:hover{
+    color: rgb(244, 75, 75);
+    text-decoration: underline;
+    font-size: larger;
+    transition: 1s;
+}
+
+.mobile-menu ul li:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background: rgb(28, 28, 28); */
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+.mobile-menu ul li:hover::after{
+    width:100%;
+  }
+  
+  @media only screen and (max-width: 880px) {
+    header .navbar {
+      display: none;
+    }
+  .navbar 
+    #hamburger-icon {
+      display: inline;
+      max-height: 100px;
+      float: right;
+      top: 50%;
+      bottom: 50%;
+    }
+  }
+
+.scroll-down {
+	header {
+		transform: translate3d(0, -100%, 0);
+        transition: all 1s ease-in-out;
+	}
+}
+
+.scroll-up {
+	header {
+		filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+        transition: all 0.8s ease-in-out;
+
+	}
+}
+
+.container{
+  height: auto;
+  max-height: 250px;
+  width: 800px;
+  max-width: 800px;
+  /* display: inline-block; */
+  /* border: 2px solid rgb(0, 0, 0); */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 25px;
+  overflow: overflow;
+  font-size: 24px;
+  background-color: rgb(67, 160, 192);
+  box-shadow: 5px 5px  black;
+}
+
+.image {
+  width: 250px;
+  display: inline-block;
+}
+
+.article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.article img:hover{
+  box-shadow: 4px 4px black;
+}
+
+.footer{
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer p{
+  /* position: static;
+  bottom: 40px; */
+  margin: 0;
+}
+
+footer p.links {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.socialmedia {
+  padding: 0px 20px;
+}
+footer ul{
+  display: inline-block;
+}
+
+.footer li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}
+.footer li{
+  list-style: none;
+}

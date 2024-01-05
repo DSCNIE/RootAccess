@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(11, 15, 53);
+        }
+        form{
+            padding: 50px;
+            padding-top: 0px;
+        }
+            h1 {
+                font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+                color: white; 
+                font-size: 48px;
+
+                 }
+
+        h3{
+            font-family: Courier, monospace;
+            font-size: 30px;
+            border-bottom: 3px solid rgb(255, 255, 255);
+            color: white;
+        }
+        #input{
+            height: 35px;
+            width: 400px;
+            padding: 5px 10px 5px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(35, 64, 194);
+            color: rgb(206, 206, 206);
+            border-radius: 30px;
+            margin: 10px;
+        }
+        select{
+            height: 50px;
+            width: 435px;
+            padding: 5px 10px 5px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(35, 64, 194);
+            color: rgb(206, 206, 206);
+            border-radius: 30px;
+            margin: 10px;
+        }
+
+        #submit{
+            height: 50px;
+            width: 250px;
+            padding: 5px 10px 5px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            background-color: rgb(58, 49, 49);
+            border: 2px solid rgb(106, 100, 109);
+            color: rgb(206, 206, 206);
+            border-radius: 30px;
+            margin: 10px;
+        }
+        #button{
+            display: grid;
+            place-items: center;
+        }
+        #submit:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center">Register</h1>
+        <form class="form">
+            <h3>Farmer Details</h3>
+            <div class="name">
+                <input type="text" name="" id="input" placeholder="First Name">
+                <input type="text" name="" id="input" placeholder="Middle Name">
+                <input type="text" name="" id="input" placeholder="Last Name">
+            </div>            
+            <div class="name">
+                <input type="date" name="" id="input" placeholder="Date of Birth">
+
+            </div>
+                <input type="text" name="" id="input" placeholder="Address">
+            <div class="name">
+
+            </div>
+            <div class="name">
+                <input type="text" name="" id="input" placeholder="E-mail">
+            </div>
+            <div class="name">
+                <input type="text" name="" id="input" placeholder="Phone Number">
+            </div>
+        </form>
+            <form class="form">
+            <h3>Account Details</h3>
+            <div class="name">
+                <select for="Bank Name">
+                    <option value="">------------SELECT------------</option>
+                    <option value="SBI">State bank of India</option>
+                    <option value="">Indus Bank</option>
+                    <option value="">Bank of India</option>
+                    <option value="">Zila Sahkari Bank</option>
+                    <option value="">Bank of Baroda</option>
+                    <option value="">Axis Bank</option>
+                    <option value="">HDFC Bank</option>
+                    <option value="">Punjab National Bank</option>
+                    <option value="">Yes Bank</option>
+                    <option value="">Bandhan Bank</option>
+                    <option value="">Canara Bank</option>
+                    <option value="">Union Bank of India</option>
+                </select>
+                <div class="name">
+                    <input type="text" name="" id="input" placeholder="Account Number">
+                </div>
+                <div class="name">
+                    <input type="" name="" id="input" placeholder="IFSC Code">
+                </div>
+            </div>
+            <div class="name">
+                <input type="text" name="" id="input" placeholder="E-mail">
+            </div>
+        </form>
+        <div id="button">
+            <button type="submit" id="submit" onclick="location.href='welcome.html'">Register</button>
+        </div>
+    </div>
+</body>
+</html>

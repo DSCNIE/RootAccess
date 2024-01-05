@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background-image: url(IMG_20240104_181735.jpg);
+            background-position: center;
+            height: auto;
+            margin: 0;
+            padding: 120px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bodylogin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .boxlogin{
+            height: 500px;
+            width: 500px;
+            border-radius: 40px;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,0.5);
+            color: #fff;
+            opacity: 1;
+            align-items: center;
+            display: block;
+            justify-content: center;
+            padding: 30px;
+        }
+        h3 {
+            font-size: 54px;
+            display: block;
+            color: aliceblue;
+            margin: 20px;
+
+        }
+        .h3{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .input{
+            height: 40px;
+            width: 100vh;
+            border: 1px solid black;
+            padding: 5px 30px 5px 30px;
+            margin: 10px;
+            border-radius: 25px;
+            background-color: white;
+            font-size: large;
+        }
+        .checkbox{
+            font-size: large;
+        }
+        #button{
+            height: 40px;
+            background-color: rgb(129, 184, 223);
+            color: #fff;
+            font-size: larger;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #button:hover{
+            cursor: pointer;
+        }
+        #register{
+            font-size: large;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+        <form class="bodylogin" method="post" action="/login">
+            <div class="boxlogin">
+                <div class = "h3" style="padding-bottom: 5px; border-bottom: 4px solid white"><h3>&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</h3></div>
+                <br>
+                <div class="h3"><input type="Username" placeholder="Username" class="input" name="username"></div>
+                <br>
+                <div class="h3"><input type="password" placeholder="Password" class="input" name="password"></div>
+                <br>
+                <div class="checkbox"><input type="checkbox" name="" id="">Remember Me</div>
+                <div>
+                    <div class="button"><a type="submit" target="_blank" class="input" id="button" onclick="location.href='welcome.html'">LOGIN</a></div>
+                </div>
+                <br>
+                <div class="h3"><a href="register.html" target="_blank"style="color: white" id="register">New User? Register</a></div>
+            </div>
+        </form>
+</body>
+</html>
