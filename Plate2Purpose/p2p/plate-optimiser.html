@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plate Optimizer</title>
+    <link rel="stylesheet" href="./plate-optimiser-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h2>Plate Optimizer</h2>
+
+        <form id="plateOptimiserForm">
+            <label for="dayOfWeek">Day of the Week:</label>
+            <select id="dayOfWeek" name="dayOfWeek" required>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+
+            <label for="platesShort">Number of Plates Short:</label>
+            <input type="number" id="platesShort" name="platesShort" required>
+
+            <label for="platesExcess">Number of Plates in Excess:</label>
+            <input type="number" id="platesExcess" name="platesExcess" required>
+
+            <button type="button" onclick="submitPlateOptimiserForm()">Submit</button>
+        </form>
+
+        <div id="weeklyReportContainer"></div>
+    </main>
+
+    <script src="./plateOptimiser.js"></script>
+    <script src="./server.js"></script>
+</body>
+</html>

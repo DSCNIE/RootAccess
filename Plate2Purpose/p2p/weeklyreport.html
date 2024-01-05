@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plate Optimizer Weekly Report</title>
+    <link rel="stylesheet" href="weeklyreport.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Weekly Report</h2>
+      <div>
+        <label for="monday">Monday:</label>
+        <input type="text" id="monday" />
+      </div>
+      <div>
+        <label for="tuesday">Tuesday:</label>
+        <input type="text" id="tuesday" />
+      </div>
+      <div>
+        <label for="wednesday">Wednesday:</label>
+        <input type="text" id="wednesday" />
+      </div>
+      <div>
+        <label for="thursday">Thursday:</label>
+        <input type="text" id="thursday" />
+      </div>
+      <div>
+        <label for="friday">Friday:</label>
+        <input type="text" id="friday" />
+      </div>
+      <div>
+        <label for="saturday">Saturday:</label>
+        <input type="text" id="saturday" />
+      </div>
+      <div>
+        <label for="sunday">Sunday:</label>
+        <input type="text" id="sunday" />
+      </div>
+      <button onclick="calculateAndDisplayReport()">Submit</button>
+      <div id="weeklyReportContainer"></div>
+      <form id="report-form" onsubmit="submitReport(event)">
+        <input
+          type="text"
+          id="userId"
+          name="userId"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="text"
+          id="reportData"
+          name="reportData"
+          placeholder="Daily Average"
+          required
+        />
+        <button type="submit" id="showReportButton">Show Report</button>
+      </form>
+      <button onclick="goBack()">Go Back</button>
+    </main>
+    <script src="./weeklyreport.js"></script>
+  </body>
+</html>

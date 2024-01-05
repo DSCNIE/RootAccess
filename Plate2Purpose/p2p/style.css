@@ -1,0 +1,82 @@
+body {
+  background-color: darkgreen;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("./P2P-homepage (3).png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  background-color: darkgreen;
+  padding: 15px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: white;
+  color: darkgreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.welcome {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.intro {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
