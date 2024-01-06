@@ -1,0 +1,330 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WellNestAI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+
+    <!-- Chatbot -->
+    <div class="chat-circle">
+      <i class="fa-solid fa-comments fa-2x" style="color: #ffffff;"></i>
+  </div>
+
+  <div class="chat-box">
+      <div class="chat-box-header">
+          <span>Chat with AI</span>
+          <button class="close-button"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+      </div>
+      <div class="chat-box-messages" id="chat-box-messages"></div>
+      <div class="user-input-area">
+          <input type="text" id="user-input" placeholder="Type a message...">
+          <button id="send-button"><i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i></button>
+      </div>
+  </div>
+
+
+
+    <!-- -------------- -->
+    <header id="header">
+      <div class="header-content-div">
+        <!-- <a href="#home-sec">
+          <img src="logo.png" alt="Company Logo" id="header-img"
+        /></a> -->
+        <h1>WellNestAI</h1>
+        <nav id="nav-bar">
+          <!-- <h3>WellNestAI</h3> -->
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#varieties" class="nav-link">TESTIMONIALS</a>
+          <a href="#our-service" class="nav-link">OUR SERVICES</a>
+          <a href="#benefits" class="nav-link">CONTACT US</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home-sec" class="flexible home-sec">
+        <div class="eye-grabber-img">
+          <img src="{% static 'lol.gif'%}" alt="GIF" />
+        </div>
+        <div class="eye-grabber">
+          <h1>WellNestAI</h1>
+          <h2>
+            "Empowering Health Through Intelligent Solutions: Your AI-Driven
+            Path to Wellness"
+          </h2>
+          <button class="btn" id="button2">
+            Chat with AI
+          </button>
+        </div>
+      </section>
+      <section id="about" class="sec-padding">
+        <h3 class="section-heading">ABOUT US</h3>
+        <div class="sec-content-div flexible">
+          <p>
+            Welcome to WellNestAI, your all-in-one healthcare companion! We
+            seamlessly blend cutting-edge AI with expert human guidance to
+            provide personalized consultations and health assessments. With
+            integrated pharmacy services and emergency locators, we ensure
+            equitable access to medical resources. Our holistic approach extends
+            to lifestyle management, offering tailored plans for diet, exercise,
+            and preventive care. Prioritizing mental and emotional wellbeing, we
+            connect you to venting platforms and mindfulness resources.
+            Experience the future of healthcare with WellNestAI—where innovation
+            meets compassion for a healthier, balanced life. Your journey to
+            wellness starts here.
+          </p>
+          <!-- <img
+            src="https://i.ibb.co/SyKVC8M/about-img.jpg"
+            alt="A man plucking apples from the tree"
+          /> -->
+        </div>
+      </section>
+      <section id="varieties" class="sec-padding">
+        <h3 class="section-heading">TESTIMONIAL</h3>
+        <div class="sec-content-div flexible">
+          <div class="tile">
+            <img src="{% static 'p1.jpg'%}" alt="Person1" />
+            <h4>Amber</h4>
+            <p>
+              WellNestAI is very helpful when u need any help related to any disease . it helps in getting the cure for that .   
+            </p>
+          </div>
+          <div class="tile">
+            <img src="{% static 'p2.jpg'%}" alt="Person 2" />
+            <!-- <h4>American Trel</h4> -->
+            <p>
+              WellNest AI became my lifeline during stressful exam times. As a
+              15-year-old .Thanks to this innovative tool, exams became more
+              manageable, and I learned the importance of mental wellbeing.
+              WellNest AI isn't just a chatbot; it's a friend that genuinely
+              cares about my health and happiness."
+            </p>
+          </div>
+          <div class="tile">
+            <img src="{% static 'p3.jpg'%}" alt="Person 3" />
+            <h4>Keshav</h4>
+            <p>
+              WellNestAI have been very helpul to me as when i was a bit
+              stressed it helped a lot to gain the confidence back and also
+              provides help when needed .
+            </p>
+          </div>
+          <div class="tile">
+            <img src="{% static 'p4.jpg'%}" alt="Person 4" />
+            <h4>Maharaej</h4>
+            <!-- <p>
+              A large apple with red and green color. It tastes a bit sour but
+              sweetens with time and is available by late October.
+            </p> -->
+          </div>
+          <div class="tile">
+            <img src="{% static 'p5.jpg'%}" alt="Person 5" />
+            <!-- <h4>Hazratbael</h4> -->
+            <p>
+              "WellNest AI has been a game-changer for my back pain. As a
+              stressed 30-year-old, the personalized yoga exercises it
+              recommended made a world of difference. The tailored guidance not
+              only eased my pain but also empowered me to take charge of my
+              well-being. Grateful for this holistic support!"
+            </p>
+          </div>
+          <div class="tile">
+            <img src="{% static 'p6.jpg'%}" alt="Person 6" />
+            <!-- <h4>Golden Delicious</h4> -->
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <section id="our-service" class="sec-padding">
+        <h2 class="section-heading">OUR SERVICES</h2>
+        <div class="sec-content-div">
+          <div class="bars">
+            <!-- <div class="icon-container">
+              <img src="https://i.ibb.co/w6H542X/Fresh.png" alt="" />
+            </div> -->
+            <div class="txt-container">
+              <!-- <h5>USP</h5> -->
+              <p>
+                <h3>
+                <li>
+                  Personalised Consultations, Health Assesments
+                </li>
+                <li>Redirection to Mental Health and Venting Sites</li>
+                <li>Appropiate Excercises based on your needs</li>
+                <li>An Amalgamation of seamless pharmacy integration and Emergeny Services Location</li>
+              </h3>
+              </p>
+            </div>
+          </div>
+          <!-- <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/FKNq4Qr/delivered.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Fast</h5>
+              <p>
+                We deliver your orders as fast as possible, delivery procedure
+                begins as soon as apple is plucked from tree.
+              </p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/HHQK1wV/happy.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Satisfying</h5>
+              <p>
+                We guarantee 100% customer satisfaction. We do our best to make
+                your purchase experience smooth. But if we mess up somehow you
+                will get compensated for every inconvenience.
+              </p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <h2>MENTALLY FRUSTRATED ?</h2>
+        <h2>Need someone to talk?</h2>
+        <div>
+        <a href="https://r.search.yahoo.com/_ylt=Awr1QYzHz5dlx7oHN7i7HAx.;_ylu=Y29sbwNzZzMEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1704476744/RO=10/RU=https%3a%2f%2fwww.supportiv.com%2ftools%2fneed-to-vent-anonymously/RK=2/RS=WOW0eLug9YDnbfV0cNtHbmAGqew-"> 
+          <h2 class="venti">VENT HERE!</h2>
+        </a>
+       </div> -->
+      </section>
+      <section class="vent" id="hapu">
+        <h2>Mentally Frustrated? Need someone to talk?</h2>
+        <div>
+        <a href="https://r.search.yahoo.com/_ylt=Awr1QYzHz5dlx7oHN7i7HAx.;_ylu=Y29sbwNzZzMEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1704476744/RO=10/RU=https%3a%2f%2fwww.supportiv.com%2ftools%2fneed-to-vent-anonymously/RK=2/RS=WOW0eLug9YDnbfV0cNtHbmAGqew-"> 
+          <h2 class="venti">VENT HERE!</h2>
+        </a>
+       </div>
+
+      </section>
+
+      <section id="benefits" class="sec-padding">
+        <h3 class="section-heading">CONTACT US</h3>
+        <div class="sec-content-div flexible">
+          <h3>To know more about us :</h3>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <input type="submit" class="btn" id="submit" value="Know More" />
+          </form>
+        </div>
+      </section>
+      <!-- <section class="sec-padding" id="contact">
+        <h3 class="section-heading">CONTACT</h3>
+        <div class="sec-content-div flexible">
+          <h6>To make an order or just to know more contact us :</h6>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <input type="submit" class="btn" id="submit" value="Know More" />
+          </form>
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      Created by
+      <a href="#"> WellNestAI</a>
+    </footer>
+
+    <script>
+      const chatCircle = document.querySelector('.chat-circle');
+        const chatBox = document.querySelector('.chat-box');
+        const closeButton = document.querySelector('.close-button');
+        const chatBoxMessages = document.getElementById('chat-box-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const btn = document.getElementById('button2');
+
+        chatCircle.addEventListener('click', () => {
+            chatCircle.style.display = 'none';
+            chatBox.style.right = '20px';
+            chatBoxMessages.style.display = 'block';
+        });
+
+        closeButton.addEventListener('click', () => {
+            chatCircle.style.display = 'flex';
+            chatBox.style.right = '-320px';
+            chatBoxMessages.style.display = 'none';
+        });
+
+        function sendMessage(message) {
+            const userMessage = document.createElement('div');
+            userMessage.className = 'message user-message';
+            userMessage.innerHTML = message;
+            chatBoxMessages.appendChild(userMessage);
+        }
+
+        function receiveMessage(message) {
+            const botMessage = document.createElement('div');
+            botMessage.className = 'message bot-message';
+            botMessage.innerHTML = message;
+            chatBoxMessages.appendChild(botMessage);
+        }
+
+        
+        function sendUserMessage() {
+            const message = userInput.value;
+            if (message.trim() !== '') {
+                sendMessage(message);
+                scrollToBottom();
+                fetch(`http://localhost:8000/getResponse?IPmessage=${message}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const botResponse = data.message;
+                        receiveMessage(botResponse);
+                        scrollToBottom();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+
+                userInput.value = '';
+            }
+        }
+
+
+        sendButton.addEventListener('click', () => {
+            sendUserMessage();
+        });
+
+        userInput.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                sendUserMessage();
+            }
+        });
+
+        btn.addEventListener('click',() => { 
+          chatCircle.style.display = 'none';
+            chatBox.style.right = '20px';
+            chatBoxMessages.style.display = 'block';
+        })
+
+        function scrollToBottom() {  
+            chatBoxMessages.scrollTop = chatBoxMessages.scrollHeight;
+        }
+    </script>
+  </body>
+</html>
