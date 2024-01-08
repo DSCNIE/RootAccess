@@ -1,25 +1,20 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const knex = require('knex');
+const db = require('./db.js');
+const run = require('./db.js');
+//mongodb+srv://mysoresrujani2003:<password>@cluster0.ehr0wbp.mongodb.net/?retryWrites=true&w=majority
 
-const db = knex({
-    client: 'pg',
-    connection: {
-        host: '127.0.0.1',
-        user: 'postgres',
-        password: 'test',
-        database: 'loginformytvideo'
-    }
-})
+
 
 const app = express();
 
-let intialPath = path.join(__dirname, "public");
+let intialPath = path.join(__dirname, "gdsc_sdp2");
 
 app.use(bodyParser.json());
 app.use(express.static(intialPath));
 
+if (run){
 app.get('/', (req, res) => {
     res.sendFile(path.join(intialPath, "index.html"));
 })
@@ -73,6 +68,10 @@ app.post('/login-user', (req, res) => {
     })
 })
 
+}
+
 app.listen(3000, (req, res) => {
     console.log('listening on port 3000......')
 })
+
+
