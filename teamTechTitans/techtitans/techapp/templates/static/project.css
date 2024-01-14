@@ -1,0 +1,266 @@
+*{
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color:white;
+    padding: 10px;
+    text-align: center;
+    margin-top: -1px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #2a662d; /* Change the color on hover */
+}
+#execute-button{
+    margin-top: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+
+
+    }
+       
+#team-name{
+    color:  green;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+#team-section {
+    margin: 20px;
+}
+
+#team-members {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: purple;
+    font-size: 20px;
+}
+ul{
+    font-size: 34px;
+}
+
+#project-section {
+    margin: 20px;
+    
+}
+
+#project-info {
+
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+.techi{font-size: 20px;
+    justify-content: space-evenly;
+    color:rgba(245, 245,220,0.8);
+};
+    
+
+
+.problem-statement{
+    margin-bottom: 10px;
+    color:purple;
+    font-size: 30px;
+}
+#project-info{
+    color: #af6faf ;
+font-size: 60px;
+margin-left: -680px;
+}
+#Description{
+    font-size: 20px;
+}
+#team-leader {
+    font-size: 46px;
+    color: purple;
+}
+#saharsh {
+    margin-left: 15px;
+    font-size: 45px;
+    margin-top: 47px;
+}
+#leaderr{
+    display: flex;
+}
+.prodesc{
+    font-size: 25px;
+    color: #333;
+    text-decoration: solid;
+}
+.images {
+    margin-top: 29px;
+    margin-bottom: 20px;
+    height: 301px;
+    margin-left: 90px;
+}
+.image{
+    align-items: center;
+    /* background-color: #333; */
+}
+#copyright{
+    height: 8px;
+}
+.centerwork{
+    width: 70%;
+    margin-left:14%;
+   padding: 30px;
+    border: 2px solid #333; 
+}
+/* project.css */
+
+body {
+    background-image: url('lead.avif'); /* Replace 'your-background-image.jpg' with the actual path or URL of your image */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+}
+
+
+/* Your additional styling goes here */
+#projectinfo{
+   
+   border-radius: 10px;
+}
+.header{
+    /* background-color: grey; */
+    margin-top: -21px;
+}
+#problem-statement{
+    font-size: 30px;
+}
+#desp{ font-size: larger;
+    color:  #cf595f;
+}
+.header{
+    
+    height:100px;
+}
+#project-info{
+    color: #cf595f;
+    margin-left: -650px;
+}
+.problem-statement{
+    color: #cf595f;
+}
+.prodesc{
+    color: rgba(245, 245,220,0.8);
+}
+h1{
+    color: antiquewhite;
+    padding: 27px;
+    font-size: 40px;
+    font-style: normal;
+    margin-top: 10px;
+}
+nav {
+    margin-top: 25px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+section{
+    margin-top:-92px;
+}
+#project-section{
+    margin-top:-90px;
+}
+#project-info{
+    color: #cf595f;
+    
+}
+#desp{
+    color: #cf595f;
+    
+}
+#execute-button{
+    padding-top: 10px;
+}
+button{
+    margin-top: 10px;
+}
+.slider-container {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-slider {
+    display: flex;
+    width: fit-content;
+    animation: mover 0.5s ;
+    transition: transform 0.5s ease-in-out;
+}
+@keyframes mover {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.slider-item {
+    width: 300px;
+    flex: 0 0 auto;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+}
+#image-container{
+    box-shadow: 0 4px 8px rgba(182, 177, 177, 0.1);
+    border-radius: 20px;
+}
+.images{
+    border-radius: 10px;
+    margin-left: 29px;
+}

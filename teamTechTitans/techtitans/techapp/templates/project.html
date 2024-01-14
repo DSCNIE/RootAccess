@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Tech Titans</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="static/project.css">
+</head>
+
+<body>
+
+    
+
+
+    <div class="header">
+      
+        <nav>
+            <a class="techi">Tech Titans </a>
+            <a class="techi" href="#home">Home</a>
+            <a class="techi" href="#about">About</a>
+            <a class="techi" href="#services">Services</a>
+            <a class="techi" href="#contact">Contact</a>
+        </nav>
+
+    </div>
+
+
+    </div>
+
+<section id="project-section">
+        <div id="projectinfo">
+            <h2 id="project-info">Face detection model</h2>
+        </div>
+
+        </p>
+        <div class="centerwork">
+            <div id="desp">
+                <h2>Solution description</h2>
+            </div>
+            <p class="problem-statement">
+            <div class="prodesc"> </b>Creating an effective online learning environment involves not only delivering
+                content but
+                also ensuring active student engagement. To enhance this interaction, incorporating head movement
+                tracking
+                into the web camera becomes a valuable tool. By leveraging computer vision technologies, we can detect
+                and
+                monitor students' presence during online classes in real-time. This feature not only helps educators
+                ensure
+                that students are actively participating but also provides insights into their level of engagement.
+
+                content covered in previous classes. This serves as a reinforcement mechanism, promoting the retention
+                of
+                information and encouraging students to stay mentally active during the entire session.<br>
+                <div class="image-container">
+                    <img class="images" src="static/active.jpg" alt="Image 2"><br>
+                </div>
+
+                In essence, the integration of head movement tracking and the incorporation of spontaneous MCQs
+                contribute
+                to the creation of a dynamic and engaging virtual classroom. These features not only serve the practical
+                purpose of ensuring student presence but also enhance the overall educational experience by promoting
+                active
+                participation and reinforcing learning outcomes. As technology continues to evolve, such innovative
+                approaches play a pivotal role in shaping the future of online education, making it more interactive,
+                personalized.<br><br>
+
+
+
+                </p>
+                </effective>
+                </p>
+            </div>
+            </p>
+            <section>
+
+<!--         
+                <div id="execute-button"></div>
+                <button id="execute-button" onclick="executeCode()">Execute Face Detection Code</button> -->
+            </section>
+        </div>
+
+        <form action="http://127.0.0.1:8000/execute_on_click/" method="post">
+            {% csrf_token %}
+            <button type="submit">Execute Face Detection Code</button>
+        </form>
+
+      
+        <button id="execute-on-click">Execute On Click</button>
+
+        <div id="result">
+            {% if result %}
+                <h3>Script Output:</h3>
+                <pre>{{ result }}</pre>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    $(document).ready(function() {
+        $("#execute-on-click").click(function() {
+            // Send AJAX request to the execute_on_click endpoint
+            $.ajax({
+                url: "http://127.0.0.1:8000/execute_on_click/",  // Use the Django template tag to get the URL
+                type: "POST",
+                dataType: "json",
+                success: function(response) {
+                    // Handle the response from the server
+                    if (response.success) {
+                        // Display a message or update the page as needed
+                        alert(response.message);
+                    } else {
+                        // Handle the error case
+                        alert("Error: " + response.message);
+                    }
+                },
+                error: function(error) {
+                    // Handle any AJAX errors
+                    alert("Error: " + error.statusText);
+                }
+            });
+        });
+    });
+</script>
+
+       
+    </section>
+
+    
+    
+
+    <footer>
+        <p id="copyright">&copy; 2024 Face Detection Model. All rights reserved. | Tech Titans</p>
+    </footer>
+
+
+    <script>
+        function startWorking() {
+
+            alert("Model is now working!");
+        }
+    </script>
+
+</body>
+
+</html>
