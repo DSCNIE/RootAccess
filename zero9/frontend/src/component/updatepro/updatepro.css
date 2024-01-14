@@ -1,0 +1,61 @@
+.wholecontainer{
+    margin: 150px;
+}
+.single{
+    display: flex;
+    height: 700px;
+    width: 80%;
+    margin: 12px;
+    margin: auto;
+
+    justify-content: space-between;
+    
+
+}
+
+
+.single img{
+    height: 300px;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 152px;
+
+
+
+}
+.single .textprotion{
+   
+}
+.single .name{
+    font-size: 40px;
+    font-weight: 800;
+}
+.single .dispsec{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.single .price{
+    font-size: 30px;
+    color: #ffa000;
+    margin-top: 20px;
+    
+}
+.single .phonenumber{
+    margin-top: 15px; 
+    font-size: 20px;
+    
+}
+.single .email{
+    font-size: 20px;
+
+}
+.single .location{
+    margin-top: 15px;
+    font-size: 30px;
+}
+.single .icon{
+    color: black;
+    font-size: 48px;
+    background-color: black
+}

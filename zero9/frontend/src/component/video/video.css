@@ -1,0 +1,72 @@
+.video-background video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1700px;
+    object-fit: cover; /* Ensure video fills the space */
+    z-index: -1; /* Place video behind other content */
+    filter: brightness(0.5);
+   
+  }
+  
+  .disp{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    margin: auto;
+    
+    width: 70%;
+}
+.uppertitle{
+    padding: 52px;
+    align-items: center;
+    position: relative;
+
+}
+.uppertitle img{
+    width: 250px;
+    height: 55px;
+}
+
+.addproduct{
+    height: 50px;
+    width: 50%;
+    background-color: #ffa000;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 6px;
+   
+   margin: auto;
+
+}
+.addproduct:hover{
+    background-color: gray;
+}
+.allproduct{
+    height: 50px;
+    width: 50%;
+    background-color: #ffa000;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 6px;
+
+}
+.allproduct:hover{
+    background-color: gray;
+}
+.buttonused{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}

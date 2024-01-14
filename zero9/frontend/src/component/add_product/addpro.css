@@ -1,0 +1,72 @@
+*{
+    
+}
+.productadd{
+    color: rgb(255, 255, 255);
+    background-color: yellowgreen;
+    height: 700px;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    top: 150px;
+    position: relative;
+    padding: 25px;
+
+
+    
+}
+.productadd h1{
+    color:black;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.productadd input{
+
+        width: 80%;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        padding:12px;
+        padding-bottom: 5px; 
+        text-align: left;
+        align-items: center;
+        margin: 12px auto;
+        margin-bottom: 5px;
+        padding-left: 0;
+        font-size: 20px;
+        font-weight: 800;
+        color: white;
+        position: relative;
+       left: 40px;
+       
+       
+    }
+
+    .productadd button{
+
+        align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    width: 65%;
+    color: white;
+    background-color: #ffa000;
+    padding: 0px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 12px;
+    }
+.productadd span{
+    position: relative;
+    left:40px;
+    font-size: 14px;
+    color:orangered;
+    
+}
