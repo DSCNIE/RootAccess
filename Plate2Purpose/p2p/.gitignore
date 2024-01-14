@@ -1,0 +1,101 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Package managers
+node_modules
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Compiled files
+/dist
+/build
+
+# System files
+.Spotlight-V100
+.Trashes
+
+# User files
+*.suo
+*.user
+*.lock.json
+*.swp
+
+# Configuration files
+config.ini
+
+# Temp files
+*.tmp
+*.bak
+*.old
+*.ide
+*.pidb
+*.vspscc
+*.vssscc
+.svn
+
+# IDEs
+*.vscode
+.idea
+*.hg
+*.sublime-work
+
+# For building a website using html, css and node
+/lib
+*.scss
+*.map
+
+# Ignore sourcemap files for client
+/src/client/*.map
+
+# Ignore any env files except .env.example
+.env
+!/src/client/public/.env.example
+
+# Ignore files created by a .NET application
+*.suo
+*.user
+*.cuser
+*.pidb
+*.psess
+*.scc
+*.vsp
+*.vspx
+*.dsw
+*.vcproj.filters
+*.dsp
+*.sln.docstates
+*.sqlproj.filters
+*.dbmdl
+*.plt
+*.bak
+*.dbschema
+*.csproj.filters
+*.fsproj.filters
+*.lproj
+*.tcproj.filters
+*.vbproj.filters
+*.xproj.filters
+*.xsproj.filters
+
+# Ignore Visual Studio's database project
+*.dbproj
+*.sqlproj
+
+# Ignore .git folder in public folder
+/src/client/public/.git
+
+# Ignore log files
+*.log
+*.slog
+*.flog
+
+# Ignore system files
+/src/client/public/robots.txt
+
+# Ignore temporary files created by JetBrains IDEs
+.idea/workspace.xml.bak
+
+# Ignore other system files
+/src/client/public/.gitignore
