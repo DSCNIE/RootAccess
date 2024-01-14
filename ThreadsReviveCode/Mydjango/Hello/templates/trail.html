@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Information</title>
+</head>
+<body>
+
+<h2>Get Product Information</h2>
+
+<form id="productForm" >
+    Product Name: <input type="text" id="productName" required><br>
+    Product Price: <input type="number" id="productPrice" required><br>
+    Product Image: <input type="file" id="productImage" accept="image/*" required><br>
+    <input type="submit" value="Submit" onclick="postData()">
+</form>
+
+<h2>Product Information</h2>
+
+<div id="productInfo">
+    <p id="productNameInfo"></p>
+    <p id="productPriceInfo"></p>
+    <img id="productImageInfo" src="">
+</div>
+
+<script>
+document.getElementById("productForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    getProductInfo();
+});
+//new try error
+function postData() {
+    // Sample data to be sent in the POST request
+    const postData = {
+        productID: 'Sample Product',
+        price: 19.99,
+        img
+
+    };
+
+    // Make a POST request using the fetch API
+    fetch('http://127.0.0.1:8000/admin/home/product/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(postData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response data
+        console.log('Response:', data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+// Call the postData function when the page loads (for demonstration purposes)
+window.onload = postData;
+
+function getProductInfo() {
+    var productName = document.getElementById("productName").value;
+    var productPrice = document.getElementById("productPrice").value;
+    var productImage = document.getElementById("productImage").files[0];
+    var imgPreview = document.getElementById("productImageInfo");
+
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        imgPreview.src = e.target.result;
+    }
+    reader.readAsDataURL(productImage);
+
+    document.getElementById("productNameInfo").innerHTML = "Product Name: " + productName;
+    document.getElementById("productPriceInfo").innerHTML = "Product Price: $" + productPrice;
+    document.getElementById('productForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const productName = document.getElementById('productName').value;
+        const productPrice = document.getElementById('productPrice').value;
+    
+        fetch('http://127.0.0.1:8000/trail.html', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                productName: productID,
+                productPrice: price
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
+}
+</script>
+
+</body>
+</html>

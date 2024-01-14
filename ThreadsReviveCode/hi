@@ -1,0 +1,14 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+body { font-family: Arial, sans-serif; } .container { width: 300px; padding:
+16px; background-color: white; margin: 0 auto; margin-top: 100px; border: 1px
+solid black; border-radius: 4px; } input[type=text], input[type=password] {
+width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border:
+1px solid #ccc; box-sizing: border-box; } button { background-color: #4CAF50;
+color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer;
+width: 100%; } button:hover { opacity: 0.8; }

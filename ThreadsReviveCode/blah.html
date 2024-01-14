@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buyer and Seller</title>
+    <style>
+      button {
+        font-size: 1em;
+        padding: 60px 120px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
+      .buyer {
+        background-color: #008cba;
+      }
+
+      .seller {
+        background-color: #f44336;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><centre> Are you a buyer or a seller? </centre></h1>
+    <div style="text-align: center; margin-top: 100px">
+      <button class="buyer" onclick="location.href='buyer.html'">Buyer</button>
+      <button class="seller" onclick="location.href='seller.html'">
+        Seller
+      </button>
+    </div>
+  </body>
+</html>
