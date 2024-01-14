@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Columns with Background Images</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .columns,
+        .rows {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .column,
+        .row {
+            flex: 1 0 calc(50% - 10px); /* Adjusted flex property and maximum width */
+    max-width: calc(50% - 10px); /* Adjusted maximum width */
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    margin: 5px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+        }
+
+        .column1 {
+            background-image: url(https://cdn.pixabay.com/photo/2015/12/30/11/57/fruits-1114060_1280.jpg);
+        }
+
+        .column2 {
+            background-image: url(https://cdn.pixabay.com/photo/2018/05/09/21/42/vegetables-3386212_1280.jpg);
+        }
+
+        .column3 {
+            background-image: url(https://cdn.pixabay.com/photo/2019/10/15/10/39/fruit-4551315_1280.jpg);
+        }
+
+        .column4 {
+            background-image: url(https://cdn.pixabay.com/photo/2016/03/10/18/44/top-view-1248955_1280.jpg);
+        }
+
+        .row1 {
+            background-image: url(https://cdn.pixabay.com/photo/2016/02/05/15/34/pasta-1181189_1280.jpg);
+        }
+        .row2 {
+            background-image: url(https://cdn.pixabay.com/photo/2021/08/27/11/47/basmati-rice-6578507_1280.jpg);
+        }
+
+        .row3 {
+            background-image: url(https://indiaphile.info/wp-content/uploads/2022/09/stp-lentils-1773-1240x649.jpg);
+        }
+
+        .row4 {
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/02/15/59/olive-oil-968657_1280.jpg);
+        }
+
+        .row5 {
+            background-image: url(https://www.hindustantimes.com/ht-img/img/2023/10/03/1600x900/dry_fruits_1696318265254_1696318275587.jpg);
+        }
+
+        .row6 {
+            background-image: url(https://cdn.pixabay.com/photo/2018/11/12/20/32/herbs-3811722_1280.jpg);
+        }
+        .row7 {
+            background-image: url(https://cdn.pixabay.com/photo/2015/09/17/17/19/eggs-944495_1280.jpg);
+        }
+        .row8 {
+            background-image: url(https://cdn.pixabay.com/photo/2013/07/19/00/18/seafood-165220_1280.jpg);
+        }
+        @media (min-width: 768px) {
+            .column,
+            .row {
+                flex: 1 0 calc(48% - 10px); /* Adjusted flex property and maximum width for larger screens */
+        max-width: 350px;
+        height: 300px;
+            }
+        }
+
+        @media (min-width: 1650px) {
+            .column,
+            .row {
+                 flex: 1 0 calc(30% - 10px); /* Adjusted flex property and maximum width for larger screens */
+        max-width: calc(30% - 10px);
+            }
+        }
+
+        .column:hover,
+        .row:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FARM TO TABLE CONNECTION</marquee></h1>
+    <h2><marquee direction="left">FRUITS AND VEGETABLES</marquee></h2>
+
+    <div class="columns">
+        <a href="#" class="column column1"><b>FRESH FRUITS</b></a>
+        <a href="#" class="column column2"><b>FRESH VEGETABLES</b></a>
+        <a href="#" class="column column3"><b>CUTS & EXOTICS</b></a>
+        <a href="#" class="column column4"><b>HERBS & SEASONINGS</b></a>
+    </div>
+
+    <h1>DAILY STAPLES</h1>
+
+    <div class="rows">
+        <a href="#" class="row row1"><b>ATTA & FLOUR</b></a>
+        <a href="#" class="row row2"><b>RICE & RICE PRODUCTS</b></a>
+        <a href="#" class="row row3"><b>DALS & PULSES</b></a>
+        <a href="#" class="row row4"><b>COOKING OILS</b></a>
+        <a href="#" class="row row5"><b>DRY FRUITS</b></a>
+        <a href="#" class="row row6"><b>SPICES</b></a>
+        <a href="#" class="row row7"><b>EGGS</b></a>
+        <a href="#" class="row row8"><b>MEAT & FISH</b></a>
+    </div>
+</body>
+
+</html>
