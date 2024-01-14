@@ -1,0 +1,181 @@
+{"intents":
+[
+            {
+             "tag":"greetings",
+             "patterns": ["hello","hey","hi","good day","greetings","what's up?","how is it going"],
+             "responses":["hello","hey!","what can i do for you?"]
+            },
+            {
+             "tag":"goodbye",
+             "patterns": ["cya","see you later","goodbye","have a good day","bye","cao","see ya"],
+             "responses":["have a nice day","goodbye"]
+            },
+            {
+             "tag":"age",
+             "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
+             "responses":["I get reborn after every compilation","hey!","my owners are averagely 20 years!"]
+            },
+            {
+             "tag":"name",
+             "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
+             "responses":["you can call me Medbot!","i am Medbot!","i am Medbot your medical assistant"]
+            },
+            {
+             "tag":"common cold symptoms",
+             "patterns": ["Runny or stuffy nose",
+             "Sore throat",
+             "Cough",
+             "Congestion",
+             "Slight body aches or a mild headache",
+             "Sneezing",
+             "Low-grade fever",
+             "Generally feeling unwell (malaise)"],
+             "responses":["It seems that you are suffering from common cold"]
+            },
+            {
+             "tag":"fever symptoms",
+             "patterns":["Sweating",
+             "Chills and shivering",
+             "Headache",
+             "Muscle aches",
+             "Loss of appetite",
+             "Irritability",
+             "Dehydration",
+             "General weakness"],
+             "responses":["It seems that you are suffering from fever"]
+            },
+            {
+             "tag":"Diabetes symptoms",
+             "patterns":["increased hunger",
+             "increased thirst",
+             "weight loss",
+             "frequent urination",
+             "blurry vision",
+             "extreme fatigue"],
+             "responses":["It seems that you are suffering from Diabetes"]
+            },
+            {
+             "tag":"Depression symptoms",
+             "patterns":["Hopeless outlook",
+             "Lost interest",
+             "Increased fatigue",
+             "sleep problem",
+             "Anxiety",
+             "change in weight",
+             "Looking at death"],
+             "responses":["It seems that you might be suffering from depression"]
+            },
+            {
+             "tag":"Asthma symptoms",
+             "patterns":["coughing",
+             "tightness in the chest",
+             "shortness of breath",
+             "difficulty talking",
+             "panic",
+             "fatigue"],
+             "responses":["It seem that you are suffering from Asthma"]
+            },
+            {
+             "tag":"common cold prevention",
+             "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
+             "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+            },
+            {
+             "tag":"fever prevention",
+             "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
+             "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+            },
+            {
+             "tag":"diabetes prevention",
+             "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
+             "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
+            },
+            {
+             "tag":"depression prevention",
+             "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
+             "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+            },
+            {
+             "tag":"asthma prevention",
+             "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
+             "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+            },
+            {
+             "tag":"Consultation",
+             "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
+             "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
+            },
+                  {
+                    "tag": "flu",
+                    "patterns": ["fever", "cough", "sore throat", "runny or stuffy nose", "muscle aches", "headache", "fatigue"],
+                    "responses": ["over-the-counter medications", "rest", "fluids"],
+                    "doctor": ["family doctor", "urgent care"],
+                    "risk_level": "low (0.1%)"
+                  },
+                  {
+                    "tag": "bronchitis",
+                    "patterns": ["cough", "mucus production", "shortness of breath", "chest pain"],
+                    "responses": ["antibiotics", "over-the-counter medications", "rest", "fluids"],
+                    "doctor": ["family doctor", "pulmonologist"],
+                    "risk_level": "low (0.5%)"
+                  },
+                  {
+                    "tag": "pneumonia",
+                    "patterns": ["fever", "cough", "shortness of breath", "chest pain", "fatigue"],
+                    "responses": ["antibiotics", "over-the-counter medications", "rest", "fluids"],
+                    "doctor": ["family doctor", "pulmonologist"],
+                    "risk_level": "moderate (1%)"
+                  },
+                  {
+                    "tag": "heart_attack",
+                    "patterns": ["chest pain", "shortness of breath", "nausea", "vomiting", "lightheadedness", "sweating"],
+                    "responses": ["emergency medical services"],
+                    "doctor": ["cardiologist"],
+                    "risk_level": "high (20%)"
+                  },
+                  {
+                    "tag": "stroke",
+                    "patterns": ["sudden weakness", "numbness on one side of the body", "confusion", "difficulty speaking", "trouble seeing in one eye", "severe headache"],
+                    "responses": ["emergency medical services"],
+                    "doctor": ["neurologist"],
+                    "risk_level": "high (15%)"
+                  },
+                  {
+                    "tag": "cancer",
+                    "patterns": ["lump", "unexplained weight loss", "fatigue", "changes in bowel", "bladder habits", "persistent cough", "indigestion", "unexplained bleeding or discharge"],
+                    "responses": ["surgery", "chemotherapy", "radiation therapy"],
+                    "doctor": ["oncologist"],
+                    "risk_level": "varies depending on the type of cancer"
+                  },
+                  {
+                    "tag": "diabetes",
+                    "patterns": ["increased thirst", "frequent urination", "unexplained weight loss", "fatigue", "blurred vision", "cuts that are slow to heal"],
+                    "responses": ["diet", "exercise", "medication"],
+                    "doctor": ["endocrinologist"],
+                    "risk_level": "high (25%)"
+                  },
+                  {
+                    "tag": "alzheimers_disease",
+                    "patterns": ["memory loss", "confusion", "difficulty thinking", "changes in personality or behavior"],
+                    "responses": ["there is no cure for alzheimer's disease, but there are treatments that can help manage the symptoms"],
+                    "doctor": ["neurologist"],
+                    "risk_level": "high (70%)"
+                  },
+                  {
+                    "tag": "arthritis",
+                    "patterns": ["pain", "stiffness", "swelling", "inflammation in the joints"],
+                    "responses": ["medication", "physical therapy", "lifestyle changes"],
+                    "doctor": ["rheumatologist"],
+                    "risk_level": "varies depending on the type of arthritis"
+                  },
+                  {
+                    "tag": "adenovirus",
+                    "patterns": ["fever", "sore throat", "cough", "conjunctivitis", "rash", "pink eye"],
+                    "responses": ["antibiotics", "over-the-counter medications", "rest", "fluids"],
+                    "doctor": ["family doctor", "urgent care"],
+                    "risk_level": "low (0.1%)"
+                  }
+                   
+            
+]}
+        
